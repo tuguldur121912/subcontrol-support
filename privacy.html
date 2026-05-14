@@ -5,73 +5,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SubControl Privacy Policy</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.6;
-      color: #111;
+    :root {
+      --bg: #070b1a;
+      --card: rgba(16, 25, 53, 0.78);
+      --text: #f8fafc;
+      --muted: #aab4c8;
+      --line: rgba(255, 255, 255, 0.12);
+      --accent: #00c2ff;
+      --purple: #6c5ce7;
     }
-    h1 { font-size: 32px; }
-    h2 { margin-top: 32px; }
-    a { color: #007aff; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(0, 194, 255, 0.20), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(108, 92, 231, 0.22), transparent 38%),
+        var(--bg);
+      padding: 40px 20px;
+    }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      margin-bottom: 24px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--accent);
+      background: rgba(255, 255, 255, 0.06);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 64px);
+      line-height: 1.02;
+      margin: 18px 0 12px;
+      letter-spacing: -0.04em;
+    }
+
+    h2 {
+      margin-top: 34px;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+      backdrop-filter: blur(18px);
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    ul { padding-left: 22px; }
+
+    footer {
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1>SubControl Privacy Policy</h1>
+  <main>
+    <section class="hero">
+      <span class="badge">Privacy-first • Local-first</span>
+      <h1>SubControl Privacy Policy</h1>
+      <p>Effective date: May 14, 2026</p>
+    </section>
 
-  <p>Effective date: May 5, 2026</p>
+    <section class="card">
+      <p>
+        SubControl is designed to be local-first and privacy-first. Your subscription data stays on your device unless you choose to export it or create an encrypted backup.
+      </p>
 
-  <p>
-    SubControl is a privacy-first subscription tracking app. This Privacy Policy explains how the app handles user data.
-  </p>
+      <h2>Information We Do Not Collect</h2>
+      <p>SubControl does not require an account, does not use bank login, does not connect to financial institutions, does not use analytics SDKs, does not show ads, and does not sell personal data.</p>
 
-  <h2>Data Collection</h2>
-  <p>
-    SubControl does not collect, sell, or share personal data. The app does not require an account, does not connect to banks,
-    and does not access financial institutions.
-  </p>
+      <h2>Information Stored On Your Device</h2>
+      <p>SubControl may store subscription information locally on your device, including:</p>
+      <ul>
+        <li>Subscription names</li>
+        <li>Prices and currencies you manually enter</li>
+        <li>Billing cycles and renewal dates</li>
+        <li>Categories and reminder settings</li>
+        <li>App preferences and Pro status information</li>
+      </ul>
 
-  <h2>Local Data Storage</h2>
-  <p>
-    Subscription information entered by the user is stored locally on the user’s device. This may include subscription names,
-    prices, currencies, categories, billing cycles, renewal dates, and reminder preferences.
-  </p>
+      <h2>Local Notifications</h2>
+      <p>SubControl may schedule local notifications for renewal reminders or monthly recap reminders if you enable them. These notifications are generated locally on your device.</p>
 
-  <h2>Notifications</h2>
-  <p>
-    SubControl may use local notifications for renewal reminders and monthly recap reminders if the user enables them.
-    These notifications are generated locally on the device.
-  </p>
+      <h2>CSV Export</h2>
+      <p>If you choose to export CSV data, SubControl creates a file from your local subscription data and lets you share it using your device’s share sheet. You control where that file is sent or saved.</p>
 
-  <h2>CSV Export and Backup</h2>
-  <p>
-    Users may export subscription data as CSV or create encrypted backup files. These actions are user-initiated.
-    SubControl does not upload these files to a server.
-  </p>
+      <h2>Encrypted Backup And Restore</h2>
+      <p>If you create an encrypted backup, SubControl encrypts your local data before the backup leaves your device. Your backup password is not stored by SubControl and cannot be recovered by us.</p>
 
-  <h2>In-App Purchases</h2>
-  <p>
-    SubControl may offer in-app purchases. Payments are processed by Apple or Google through their respective app stores.
-    SubControl does not collect payment card information.
-  </p>
+      <h2>In-App Purchases</h2>
+      <p>SubControl may offer optional in-app purchases for Pro access. Purchases are processed by Apple or Google. SubControl does not collect payment card information.</p>
 
-  <h2>Third-Party Services</h2>
-  <p>
-    SubControl does not use bank-sync services, analytics SDKs, advertising SDKs, or cloud tracking services.
-  </p>
+      <h2>Cancellation Guides And External Links</h2>
+      <p>SubControl may show cancellation instructions and links to official service websites. SubControl provides instructions only and does not cancel subscriptions automatically.</p>
 
-  <h2>Data Deletion</h2>
-  <p>
-    Users can delete subscriptions inside the app. Users can also delete all local app data by removing the app from their device.
-  </p>
+      <h2>Data Deletion</h2>
+      <p>You can delete subscriptions inside the app. You can also remove SubControl from your device to delete locally stored app data, subject to your device backup settings.</p>
 
-  <h2>Contact</h2>
-  <p>
-    For questions about this Privacy Policy, contact:
-    <br />
-    <a href="mailto:ensarmbm@gmail.com">ensarmbm@gmail.com</a>
-  </p>
+      <h2>Children</h2>
+      <p>SubControl is not intended for children under 13.</p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy questions, contact:<br />
+        <a href="mailto:ensarmbm@gmail.com">ensarmbm@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>SubControl • Private subscription tracking</footer>
+  </main>
 </body>
 </html>
